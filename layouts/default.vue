@@ -1,12 +1,9 @@
 <template>
  <v-app>
-  <v-app-bar app>
-    <!-- -->
-    <v-app-bar-title>Basic Example</v-app-bar-title>
-  </v-app-bar>
+  <main-nav></main-nav>
 
   <!-- Sizes your content based upon application components -->
-  <v-main>
+  <v-main class="main">
 
     <!-- Provides the application the proper gutter -->
     <v-container fluid>
@@ -23,11 +20,20 @@
 </template>
 
 <script>
+import MainNav from "../components/MainNav.vue";
 export default {
   data () {
     return {
      
     }
+  },
+  components: {
+    MainNav
   }
 }
 </script>
+<style scoped>
+.main{
+  background-color: white;
+}
+</style>
